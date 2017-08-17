@@ -1,0 +1,33 @@
+{
+  "name": "hyperobj-context",
+  "version": "1.0.0",
+  "description": "Nested hyperscript contexts for hyperobj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Bölsche <jan@lagomorph.de> (http://regular.codes)",
+  "license": "MIT",
+  "devDependencies": {
+    "budo": "^10.0.4",
+    "hyperobj": "^1.0.2",
+    "hyperscript": "^2.0.2",
+    "hyperscript-nested-contexts": "^1.0.0",
+    "observable": "^2.1.4"
+  },
+  "dependencies": {},
+  "keywords": [
+    "hyperobj",
+    "hyperscript",
+    "context",
+    "nesting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regular/hyperobj-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/regular/hyperobj-context/issues"
+  },
+  "homepage": "https://github.com/regular/hyperobj-context#readme"
+}
