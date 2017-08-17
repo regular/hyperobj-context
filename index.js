@@ -1,5 +1,5 @@
 function decorate(ho, hs) {
-  return function() {
+  let ret = function() {
     let render = ho.apply(this, [].slice.apply(arguments))
     render.pushContext = function(h) {
       render._contexts = render._contexts || []
@@ -13,6 +13,8 @@ function decorate(ho, hs) {
     render.ctx = hs
     return render
   }
+  Object.keys(ho).forEach((k)=>ret[k] = ho[k])
+  return ret
 }
 
 module.exports = decorate
